@@ -1,4 +1,20 @@
 package ru.javarush.aleev.animalisland.entities.herbivores;
 
-public class Caterpillar {
+import ru.javarush.aleev.animalisland.entities.plants.Plant;
+
+public class Caterpillar extends Herbivore {
+    @Override
+    public void eat(Plant plant) {
+
+    }
+
+    @Override
+    public void move() {
+
+    }
+
+    @Override
+    public void reproduct() {
+
+    }
 }

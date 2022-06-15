@@ -1,6 +1,23 @@
 package ru.javarush.aleev.animalisland.entities;
 
-public abstract class Animal {
-//    public abstract void move();
-//    public abstract void multiply();
+import ru.javarush.aleev.animalisland.interfaces.eatable;
+import ru.javarush.aleev.animalisland.interfaces.movable;
+import ru.javarush.aleev.animalisland.interfaces.reproductable;
+
+public abstract class Animal implements eatable, movable, reproductable {
+
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void move() {
+
+    }
+
+    @Override
+    public void reproduct() {
+
+    }
 }

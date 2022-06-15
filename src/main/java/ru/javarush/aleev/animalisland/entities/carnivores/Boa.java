@@ -3,8 +3,7 @@ package ru.javarush.aleev.animalisland.entities.carnivores;
 import ru.javarush.aleev.animalisland.entities.herbivores.Herbivore;
 
 
-class Bear extends Carnivore {
-
+public class Boa extends Carnivore {
     @Override
     public void eat(Herbivore herbivore) {
 
@@ -20,3 +19,4 @@ class Bear extends Carnivore {
 
     }
 }
+

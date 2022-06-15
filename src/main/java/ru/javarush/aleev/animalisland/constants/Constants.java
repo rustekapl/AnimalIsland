@@ -2,7 +2,7 @@ package ru.javarush.aleev.animalisland.constants;
 
 public class Constants {
 
-    public static final int LENGHT_ISLAND = 100;
+    public static final int LENGTH_ISLAND = 100;
     public static final int WIDTH_ISLAND = 20;
     public static final int TIME_CYCLE = 500;
 
@@ -19,10 +19,10 @@ public class Constants {
     public static final int SPEED_VOLF=3;
     public static final double FOOD_VALUE_VOLF=8;
 
-    public static final double MAX_WEIGHT_SNAKE = 15;
-    public static final int FIELD_MAX_VALUE_SNAKE = 30;
-    public static final int SPEED_SNAKE=1;
-    public static final double FOOD_VALUE_SNAKE=3;
+    public static final double MAX_WEIGHT_BOA = 15;
+    public static final int FIELD_MAX_VALUE_BOA = 30;
+    public static final int SPEED_BOA=1;
+    public static final double FOOD_VALUE_BOA=3;
 
     public static final double MAX_WEIGHT_FOX = 8;
     public static final int FIELD_MAX_VALUE_FOX = 30;
