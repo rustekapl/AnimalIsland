@@ -1,15 +1,12 @@
 package com.javarush.aleev.island.entities.gamefields;
 
-import com.javarush.aleev.island.entities.carnivores.*;
-import com.javarush.aleev.island.entities.herbivores.*;
-import com.javarush.aleev.island.entities.plants.Plant;
-import com.javarush.aleev.island.entities.plants.Plants;
+import com.javarush.aleev.island.entities.organizmes.animals.carnivores.*;
+import com.javarush.aleev.island.entities.organizmes.animals.herbivores.*;
+import com.javarush.aleev.island.entities.organizmes.plants.Plant;
+import com.javarush.aleev.island.entities.organizmes.plants.Plants;
 import com.javarush.aleev.island.utils.Print;
 import com.javarush.aleev.island.utils.Randomizer;
-import com.javarush.aleev.island.entities.carnivores.*;
-import com.javarush.aleev.island.entities.herbivores.*;
-import com.javarush.aleev.island.entities.plants.*;
-import com.javarush.aleev.island.utils.*;
+
 import java.util.concurrent.ConcurrentHashMap;
 import static com.javarush.aleev.island.constants.Constants.*;
 
@@ -50,10 +47,10 @@ public class GameCell {
         carnivores.put(new Boa(), Randomizer.get(FIELD_MAX_VALUE_BOA));
         carnivores.put(new Eagle(), Randomizer.get(FIELD_MAX_VALUE_EAGLE));
         carnivores.put(new Fox(), Randomizer.get(FIELD_MAX_VALUE_FOX));
-        carnivores.put(new Volf(), Randomizer.get(FIELD_MAX_VALUE_VOLF));
+        carnivores.put(new Wolf(), Randomizer.get(FIELD_MAX_VALUE_VOLF));
 
 
-        plants.put(new Plant(), Randomizer.get(FIELD_MAX_VALUE_PLANT));
+        plants.put(new Plant, Randomizer.get(FIELD_MAX_VALUE_PLANT));
 
 
         Print.printGameField(herbivores, carnivores, plants);

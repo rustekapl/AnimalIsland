@@ -17,8 +17,8 @@ public class Randomizer {
         return get(0, max);
     }
 
-    public static boolean isEating(double probability){
-        boolean isEating=Math.random()<probability;
+    public static boolean isEating(int probability){
+        boolean isEating=get(100)<probability;
         return isEating;
     }
 }
