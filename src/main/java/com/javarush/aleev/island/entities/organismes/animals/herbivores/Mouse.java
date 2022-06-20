@@ -1,15 +1,15 @@
-package com.javarush.aleev.island.entities.organizmes.animals.herbivores;
+package com.javarush.aleev.island.entities.organismes.animals.herbivores;
 
-import com.javarush.aleev.island.constants.limits.Limit;
+
 import com.javarush.aleev.island.entities.gamefields.GameCell;
-import com.javarush.aleev.island.entities.organizmes.plants.Plants;
+import com.javarush.aleev.island.entities.organismes.plants.Plants;
 import com.javarush.aleev.island.interfaces.Settings;
 import static com.javarush.aleev.island.constants.Constants.*;
 
-@Settings(name="Mouse",
+@Settings(name ="Mouse",
         icon =MOUSE_ICON,
         maxWeight = MAX_WEIGHT_MOUSE,
-        fieldMaxValue = FIELD_MAX_VALUE_MOUSE,
+        maxFieldValue = MAX_FIELD_VALUE_MOUSE,
         speed = SPEED_MOUSE,
         foodValue = FOOD_VALUE_MOUSE)
 
@@ -21,8 +21,8 @@ public class Mouse extends Herbivore {
 //            SPEED_MOUSE,
 //            FOOD_VALUE_MOUSE);
 
-    public Mouse(String name, String icon, double weight, Limit limit) {
-        super(name, icon, weight, limit);
+    public Mouse(String name, String icon, double weight, double maxWeight, int maxFieldValue, int speed, double foodValue) {
+        super(name, icon, weight, maxWeight, maxFieldValue, speed, foodValue);
     }
 
     @Override

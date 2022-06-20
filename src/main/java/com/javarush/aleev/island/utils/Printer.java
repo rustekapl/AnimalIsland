@@ -1,14 +1,14 @@
 package com.javarush.aleev.island.utils;
 
-import com.javarush.aleev.island.entities.organizmes.animals.carnivores.Carnivore;
-import com.javarush.aleev.island.entities.organizmes.animals.herbivores.Herbivore;
-import com.javarush.aleev.island.entities.organizmes.plants.Plants;
+import com.javarush.aleev.island.entities.organismes.animals.carnivores.Carnivore;
+import com.javarush.aleev.island.entities.organismes.animals.herbivores.Herbivore;
+import com.javarush.aleev.island.entities.organismes.plants.Plants;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class Print {
-    private Print(){}
+public class Printer {
+    private Printer(){}
 
     public static void printGameField(ConcurrentHashMap<Herbivore, Integer> herbivores,
                                ConcurrentHashMap<Carnivore, Integer> carnivores,

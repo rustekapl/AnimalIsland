@@ -1,15 +1,15 @@
-package com.javarush.aleev.island.entities.organizmes.animals.carnivores;
+package com.javarush.aleev.island.entities.organismes.animals.carnivores;
 
-import com.javarush.aleev.island.constants.limits.Limit;
+
 import com.javarush.aleev.island.entities.gamefields.GameCell;
-import com.javarush.aleev.island.entities.organizmes.animals.herbivores.Herbivore;
+import com.javarush.aleev.island.entities.organismes.animals.herbivores.Herbivore;
 import com.javarush.aleev.island.interfaces.Settings;
 import static com.javarush.aleev.island.constants.Constants.*;
 
-@Settings(name="Bear",
+@Settings(name ="Bear",
         icon =BEAR_ICON,
         maxWeight = MAX_WEIGHT_BEAR,
-        fieldMaxValue = FIELD_MAX_VALUE_BEAR,
+        maxFieldValue = MAX_FIELD_VALUE_BEAR,
         speed = SPEED_BEAR,
         foodValue = FOOD_VALUE_BEAR)
 public class Bear extends Carnivore {
@@ -19,8 +19,9 @@ public class Bear extends Carnivore {
 //            SPEED_BEAR,
 //            FOOD_VALUE_BEAR);
 
-    public Bear(String name, String icon, double weight, Limit limit) {
-        super(name, icon, weight, limit);
+
+    public Bear(String name, String icon, double weight, double maxWeight, int maxFieldValue, int speed, double foodValue) {
+        super(name, icon, weight, maxWeight, maxFieldValue, speed, foodValue);
     }
 
     @Override

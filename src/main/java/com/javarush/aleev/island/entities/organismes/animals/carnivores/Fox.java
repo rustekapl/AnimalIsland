@@ -1,16 +1,16 @@
-package com.javarush.aleev.island.entities.organizmes.animals.carnivores;
+package com.javarush.aleev.island.entities.organismes.animals.carnivores;
 
 
-import com.javarush.aleev.island.constants.limits.Limit;
+
 import com.javarush.aleev.island.entities.gamefields.GameCell;
-import com.javarush.aleev.island.entities.organizmes.animals.herbivores.Herbivore;
+import com.javarush.aleev.island.entities.organismes.animals.herbivores.Herbivore;
 import com.javarush.aleev.island.interfaces.Settings;
 import static com.javarush.aleev.island.constants.Constants.*;
 
-@Settings(name="Fox",
+@Settings(name ="Fox",
         icon =FOX_ICON,
         maxWeight = MAX_WEIGHT_FOX,
-        fieldMaxValue = FIELD_MAX_VALUE_FOX,
+        maxFieldValue = MAX_FIELD_VALUE_FOX,
         speed = SPEED_FOX,
         foodValue = FOOD_VALUE_FOX)
 
@@ -22,9 +22,11 @@ public class Fox extends Carnivore {
 //            SPEED_FOX,
 //            FOOD_VALUE_FOX);
 
-    public Fox(String name, String icon, double weight, Limit limit) {
-        super(name, icon, weight, limit);
+    public Fox(String name, String icon, double weight, double maxWeight, int maxFieldValue, int speed, double foodValue) {
+        super(name, icon, weight, maxWeight, maxFieldValue, speed, foodValue);
     }
+
+
 
     @Override
     public void eat(Herbivore herbivore, GameCell currentGameCell) {

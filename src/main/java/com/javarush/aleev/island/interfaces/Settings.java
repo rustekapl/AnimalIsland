@@ -12,7 +12,7 @@ public @interface Settings {
     String name();
     String icon();
     double maxWeight();
-    int fieldMaxValue();
+    int maxFieldValue();
     int speed();
     double foodValue();
 

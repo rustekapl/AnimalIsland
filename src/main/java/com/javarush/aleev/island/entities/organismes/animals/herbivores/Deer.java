@@ -1,15 +1,15 @@
-package com.javarush.aleev.island.entities.organizmes.animals.herbivores;
+package com.javarush.aleev.island.entities.organismes.animals.herbivores;
 
-import com.javarush.aleev.island.constants.limits.Limit;
+
 import com.javarush.aleev.island.entities.gamefields.GameCell;
-import com.javarush.aleev.island.entities.organizmes.plants.Plants;
+import com.javarush.aleev.island.entities.organismes.plants.Plants;
 import com.javarush.aleev.island.interfaces.Settings;
 import static com.javarush.aleev.island.constants.Constants.*;
 
-@Settings(name="Deer",
+@Settings(name ="Deer",
         icon =DEER_ICON,
         maxWeight = MAX_WEIGHT_DEER,
-        fieldMaxValue = FIELD_MAX_VALUE_DEER,
+        maxFieldValue = MAX_FIELD_VALUE_DEER,
         speed = SPEED_DEER,
         foodValue = FOOD_VALUE_DEER)
 
@@ -21,8 +21,8 @@ public class Deer extends Herbivore {
 //            SPEED_DEER,
 //            FOOD_VALUE_DEER);
 
-    public Deer(String name, String icon, double weight, Limit limit) {
-        super(name, icon, weight, limit);
+    public Deer(String name, String icon, double weight, double maxWeight, int maxFieldValue, int speed, double foodValue) {
+        super(name, icon, weight, maxWeight, maxFieldValue, speed, foodValue);
     }
 
     @Override

@@ -1,6 +1,6 @@
 package com.javarush.aleev.island.utils;
 
-import com.javarush.aleev.island.exception.IslandException;
+import com.javarush.aleev.island.exception.GameException;
 
 public class Sleeper {
     private Sleeper() {
@@ -10,7 +10,7 @@ public class Sleeper {
         try {
             Thread.sleep(timeout);
         } catch (InterruptedException e) {
-            throw new IslandException(e);
+            throw new GameException(e);
         }
     }
 }
