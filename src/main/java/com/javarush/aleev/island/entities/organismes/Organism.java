@@ -2,8 +2,8 @@ package com.javarush.aleev.island.entities.organismes;
 
 
 import com.javarush.aleev.island.interfaces.Reproductable;
-
 import java.util.concurrent.atomic.AtomicLong;
+import com.javarush.aleev.island.interfaces.Settings;
 
 
 public abstract class Organism implements Cloneable, Reproductable {
@@ -11,7 +11,7 @@ public abstract class Organism implements Cloneable, Reproductable {
     private final static AtomicLong idCounter = new AtomicLong(System.currentTimeMillis());
 
     private final long id = idCounter.incrementAndGet();
-    private final String type = this.getClass().getSimpleName();
+    //private final String type = this.getClass().getSimpleName();
     private final String name;
     private final String icon;
     private final double weight;
@@ -30,14 +30,22 @@ public abstract class Organism implements Cloneable, Reproductable {
                     int speed,
                     double foodValue) {
 
-        this.name = name;
+
+//        this.name = name;
+//        this.icon=icon;
+//        this.weight=weight;
+//        this.maxWeight = maxWeight;
+//        this.maxFieldValue = maxFieldValue;
+//        this.speed = speed;
+//        this.foodValue = foodValue;
+        //this.limit=limit;
+        this.name = settings.name;
         this.icon=icon;
         this.weight=weight;
         this.maxWeight = maxWeight;
         this.maxFieldValue = maxFieldValue;
         this.speed = speed;
         this.foodValue = foodValue;
-        //this.limit=limit;
     }
 
 
