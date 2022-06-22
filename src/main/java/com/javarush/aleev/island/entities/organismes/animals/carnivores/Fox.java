@@ -2,12 +2,13 @@ package com.javarush.aleev.island.entities.organismes.animals.carnivores;
 
 
 
-import com.javarush.aleev.island.entities.gamefields.GameCell;
+import com.javarush.aleev.island.parameters.Parameters;
+import com.javarush.aleev.island.entities.map.Cell;
 import com.javarush.aleev.island.entities.organismes.animals.herbivores.Herbivore;
-import com.javarush.aleev.island.interfaces.Settings;
+import com.javarush.aleev.island.interfaces.Setting;
 import static com.javarush.aleev.island.constants.Constants.*;
 
-@Settings(name ="Fox",
+@Setting(name ="Fox",
         icon =FOX_ICON,
         maxWeight = MAX_WEIGHT_FOX,
         maxFieldValue = MAX_FIELD_VALUE_FOX,
@@ -22,24 +23,27 @@ public class Fox extends Carnivore {
 //            SPEED_FOX,
 //            FOOD_VALUE_FOX);
 
-    public Fox(String name, String icon, double weight, double maxWeight, int maxFieldValue, int speed, double foodValue) {
-        super(name, icon, weight, maxWeight, maxFieldValue, speed, foodValue);
-    }
+//    public Fox(String name, String icon, double weight, double maxWeight, int maxFieldValue, int speed, double foodValue) {
+//        super(name, icon, weight, maxWeight, maxFieldValue, speed, foodValue);
+//    }
 
 
-
-    @Override
-    public void eat(Herbivore herbivore, GameCell currentGameCell) {
-
+    public Fox(Parameters parameters) {
+        super(parameters);
     }
 
     @Override
-    public void move(GameCell startGameCell) {
+    public void eat(Herbivore herbivore, Cell currentCell) {
 
     }
 
     @Override
-    public void reproduct(GameCell currentGameCell) {
+    public void move(Cell startCell) {
+
+    }
+
+    @Override
+    public void reproduct(Cell currentCell) {
 
     }
 }

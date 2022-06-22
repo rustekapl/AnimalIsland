@@ -1,10 +1,10 @@
 package com.javarush.aleev.island.entities;
 
-import com.javarush.aleev.island.entities.gamefields.GameField;
+import com.javarush.aleev.island.entities.map.GameMap;
 import com.javarush.aleev.island.factories.EntityFactory;
 
 public class Game {
-    private GameField gameField;
+    private GameMap gameMap;
     private EntityFactory entityFactory;
 
 }

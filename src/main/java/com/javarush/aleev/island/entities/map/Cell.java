@@ -1,17 +1,15 @@
-package com.javarush.aleev.island.entities.gamefields;
+package com.javarush.aleev.island.entities.map;
 
+import com.javarush.aleev.island.constants.OrganismTypes;
 import com.javarush.aleev.island.entities.organismes.Organism;
 
-import java.lang.reflect.Type;
-import java.util.List;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentSkipListSet;
 
-public class GameCell {
-    private Map<Type, Set<Organism>> residens;
-    private List<GameCell> nextGameCell;
+public class Cell {
+//    private Map<Type, Set<Organism>> residens;
+//    private List<GameCell> nextGameCell;
 
 //    @Override
 //    public String toString() {
@@ -70,5 +68,41 @@ public class GameCell {
 //        Print.printGameField(herbivores, carnivores, plants);
 //    }
 
+
+    int rows;
+    int cols;
+
+    public Cell(int rows, int cols){
+        this.rows=rows;
+        this.cols=cols;
+    }
+    public Map<OrganismTypes, Set<Organism>> sets = new HashMap<>();
+
+    public void calculate(){
+        for(Map.Entry<OrganismTypes,Set<Organism>> pair: sets.entrySet()){
+            Set<Organism> organismSet = pair.getValue();
+            for(Organism organism:organismSet){
+//                boolean isMoved = organism.move(this);
+//                if(isMoved)organismSet.remove(organism);
+            }
+        }
+
+    }
+
+    public int getRows() {
+        return rows;
+    }
+
+    public int getCols() {
+        return cols;
+    }
+
+    @Override
+    public String toString() {
+        return "\t|" + rows +
+                "/" + cols +
+                "|\t";
+    }
 }
+
 

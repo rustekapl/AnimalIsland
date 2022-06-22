@@ -11,6 +11,10 @@ public class Randomizer {
 
         return ThreadLocalRandom.current().nextInt(from, to);
     }
+    public static double get(double from, double to){
+
+        return ThreadLocalRandom.current().nextDouble(from, to);
+    }
 
     public static int get(int max){
 

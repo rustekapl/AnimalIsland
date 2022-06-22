@@ -1,9 +1,9 @@
 package com.javarush.aleev.island.interfaces;
 
-import com.javarush.aleev.island.entities.gamefields.GameCell;
+import com.javarush.aleev.island.entities.map.Cell;
 
 public interface Reproductable {
-    void reproduct(GameCell currentGameCell);
+    void reproduct(Cell currentCell);
 
 
 }
