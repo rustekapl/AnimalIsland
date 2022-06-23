@@ -2,8 +2,8 @@ package com.javarush.aleev.island.constants;
 
 public class Constants {
 
-    public static final int LENGTH_ISLAND = 2;
-    public static final int WIDTH_ISLAND = 2;
+    public static final int LENGTH_ISLAND = 4;
+    public static final int WIDTH_ISLAND = 4;
     public static final int TIME_CYCLE = 500;
 
     public static final int HERBIVORE_VALUE = 10;

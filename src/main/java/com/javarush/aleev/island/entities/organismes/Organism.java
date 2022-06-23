@@ -11,7 +11,7 @@ public abstract class Organism implements Cloneable, Reproductable {
 
     private final static AtomicLong idCounter = new AtomicLong(System.currentTimeMillis());
 
-    //private final long id = idCounter.incrementAndGet();
+    private final long id = idCounter.incrementAndGet();
     //private final String type = this.getClass().getSimpleName();
     private final String name;
     private final String icon;
